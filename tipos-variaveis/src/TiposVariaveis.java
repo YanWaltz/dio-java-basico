@@ -1,6 +1,10 @@
 public class TiposVariaveis{
     public static void main(String[] args) {
-        System.out.println("Boa noitee!");
+        double precoArroz = 5.59;
+        System.out.println(precoArroz);
+
+
+    
    
    
    
