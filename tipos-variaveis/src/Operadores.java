@@ -2,7 +2,7 @@ public class Operadores {
 
 public static void main(String [] args) {
 
-String concatenacao ="?"; 
+String concatenacao;
 
 concatenacao = 1+1+1+"1";
 
