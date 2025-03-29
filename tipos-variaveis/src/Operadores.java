@@ -2,18 +2,11 @@ public class Operadores{
 
 public static void main(String [] args) {
 
-String concatenacao;
+int numero = 9;
 
-concatenacao = 1+1+1+"1";
+System.out.println(-numero);
+System.out.println(--numero);
+System.out.println(++numero);
 
-System.out.println(concatenacao);
-
-concatenacao = 1+"1"+1+1;
-
-System.out.println(concatenacao);
-
-concatenacao = "1"+1+(1+1);
-
-System.out.println(concatenacao);
 }
 }
