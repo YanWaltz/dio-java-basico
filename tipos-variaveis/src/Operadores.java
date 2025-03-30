@@ -4,16 +4,16 @@ public class Operadores{
 
 public static void main(String [] args) {
 
-String nome1 = "Yan";
-String nome2 = "Waltz";
+boolean terraPlana = false;
+boolean terraGeoide = true;
 
-    if(nome1.equals(nome2)){
-        System.out.println("Os nomes são os mesmos");}
+    if(terraGeoide && terraPlana){
+        System.out.println("As condições são verdadeiras");}
     else{
-        System.out.println("Nomes Diferentes");
-    }
-
-
-
+        System.out.println("Uma das condições ou as duas estão erradas");}
+    
+    if(terraGeoide || terraPlana){
+        System.out.println("Umas das condições é verdadeira");}
+        
 }
 }
