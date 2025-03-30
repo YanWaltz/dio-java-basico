@@ -1,12 +1,19 @@
+
+
 public class Operadores{
 
 public static void main(String [] args) {
 
-int numero = 9;
-int numero2 = 10;
+String nome1 = "Yan";
+String nome2 = "Waltz";
 
-String categoria = numero2>=numero  ? "verdadeiro" : "Falso";
-    System.out.println(categoria);
+    if(nome1.equals(nome2)){
+        System.out.println("Os nomes são os mesmos");}
+    else{
+        System.out.println("Nomes Diferentes");
+    }
+
+
 
 }
 }
