@@ -3,17 +3,13 @@
 public class Operadores{
 
 public static void main(String [] args) {
-
-boolean terraPlana = false;
-boolean terraGeoide = true;
-
-    if(terraGeoide && terraPlana){
-        System.out.println("As condições são verdadeiras");}
-    else{
-        System.out.println("Uma das condições ou as duas estão erradas");}
+    int numero1 = 2;
+    int numero2 = 0;
     
-    if(terraGeoide || terraPlana){
-        System.out.println("Umas das condições é verdadeira");}
-        
+    if(numero1++ == 2 && numero2 ++ != 2 )
+        System.out.println("As 2 condições são verdadeiras");
+    
+    System.out.println("O numero 1 agora é " + numero1);
+    System.out.println("O numero 2 agora é " + numero2);
 }
 }
