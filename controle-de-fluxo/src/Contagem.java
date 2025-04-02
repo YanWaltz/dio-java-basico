@@ -3,7 +3,7 @@ public class Contagem {
         
         for (int carneirinhos = 2; carneirinhos<=50; carneirinhos++) {
             if(carneirinhos == 10 || carneirinhos == 20 || carneirinhos == 30)
-                continue;
+                continue; //faz com que os números 10,20,30 não sejam impressos
             System.out.println("Tem " +carneirinhos + " carneirinhos");
         }
 
