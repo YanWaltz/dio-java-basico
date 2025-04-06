@@ -1,15 +1,22 @@
-
+import java.util.Scanner;
 
 public class Operadores{
+    public static void main(String [] args) {
+        Scanner scanner = new Scanner(System.in);
 
-public static void main(String [] args) {
-    int numero1 = 2;
-    int numero2 = 0;
-    
-    if(numero1++ == 2 && numero2 ++ != 2 )
-        System.out.println("As 2 condições são verdadeiras");
-    
-    System.out.println("O numero 1 agora é " + numero1);
-    System.out.println("O numero 2 agora é " + numero2);
+        System.out.println("Digite o valor do 1º número: ");
+            int a = scanner.nextInt();
+        System.out.println("Digite o valor do 2º número: ");
+            int b = scanner.nextInt();
+
+        int resultado  = somar(a, b); //Invoco o método
+            System.out.println("O resultado da soma dos números é: " + resultado + "\n");
+
+    }
+
+    public static int somar (int a, int b){ //Criação do método,ele é int por que ele retorna valores inteiros
+        return a + b;
+    }
+
 }
-}
+
