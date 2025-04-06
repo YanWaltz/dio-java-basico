@@ -18,12 +18,14 @@ public class contaBancaria {
 
         System.out.println("Seu saldo atual é: R$" + saldoFinal);
 
-        if(saldoFinal<0){
-            System.out.println("\nSeu saldo está negativado");
-        }else if(saldoFinal<=500){
-            System.out.println("\nSeu saldo está baixo");
-        }else{
-            System.out.println("\nSeu saldo está confortavel");
-        }
+            if(saldoFinal<0){
+                System.out.println("\nSeu saldo está negativado");
+            }else if(saldoFinal<=500){
+                System.out.println("\nSeu saldo está baixo");
+            }else{
+                System.out.println("\nSeu saldo está confortavel");
+            }
+
+        scanner.close();
     }
 }

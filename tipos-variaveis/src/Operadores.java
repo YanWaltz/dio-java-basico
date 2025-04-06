@@ -11,7 +11,8 @@ public class Operadores{
 
         int resultado  = somar(a, b); //Invoco o método
             System.out.println("O resultado da soma dos números é: " + resultado + "\n");
-
+            
+        scanner.close();
     }
 
     public static int somar (int a, int b){ //Criação do método,ele é int por que ele retorna valores inteiros
