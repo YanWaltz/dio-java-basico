@@ -1,22 +1,25 @@
+import java.util.Locale;
 import java.util.Scanner;
+
 public class CaixaEletronico {
     public static void main(String [] args){
+        Locale.setDefault(Locale.US);
         Scanner scanner = new Scanner(System.in);
         
         double saldo = 25.00;
 
-        System.out.println("Quanto você deseja sacar: ");
-        int valorSolicitado = scanner.nextInt();
+        System.out.print("Saldo atual: " + saldo + "\nQuanto você deseja sacar: ");
+        double valorSolicitado = scanner.nextDouble();
 
-        if(saldo > valorSolicitado){ //Poderia ter colocado ">=" e tirar o else if da linha 13 para o código ficar mais limpo, porém decidi fazer assim nesse exercício somente para praticar as 3 estruturas condicionais 
+        if(valorSolicitado<=0){
+            System.out.println("\nValor inválido, o valor precisa ser maior que zero.\n");
+        }
+        else if(saldo >= valorSolicitado){ 
             saldo = saldo - valorSolicitado;
-                System.out.println("\nSaldo atual: " + saldo);
-        }
-        else if (saldo == valorSolicitado){
-                System.out.println("\nSeu saldo agora é: 00.00");
-        }
-        else{
-                System.out.println("\nSaldo insuficiente!");}
-   
+                System.out.println("\nSaque efetuado com sucesso!");
+                System.out.println("Saldo atual: " + saldo + "\n");
+        }else{
+                System.out.println("\nSaldo insuficiente!\n");
+       }
     }
 }
