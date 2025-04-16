@@ -22,11 +22,13 @@ public class Usuario {
         smartTv.aumentarCanal();
             System.out.println("Canal atual: " + smartTv.canal);
             
-        smartTv.escolherCanal(13);
+        smartTv.escolherCanal(11);
             System.out.println("Canal atual: " + smartTv.canal);
         //sobe de canal 2x e em seguida escolhe um canal específico
 
-        smartTv.desligar(); //FIM
+        smartTv.desligar();
+        System.out.println("Tv está ligada? " + smartTv.ligada);
+         //FIM
     }
   
 }
